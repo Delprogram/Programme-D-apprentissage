@@ -1,5 +1,5 @@
 #include <stdio.h>
-/* Consignes
+/* 
 -- Exercice 2 — Somme d’un tableau
 
 Écrire une fonction qui retourne la somme des éléments d’un tableau en utilisant uniquement des pointeurs (sans utiliser les index []).
@@ -14,7 +14,7 @@ int sumArray(int *array, int *size, int *sum) {
         *sum += array[i];
     } */
 
-    // Sans les index[]
+    // Avec les pointeurs
     for (int i = 0; i < *size; i++) {
         *sum += *(array + i);
     }
